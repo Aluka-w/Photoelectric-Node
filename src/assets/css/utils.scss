@@ -1,0 +1,25 @@
+$mian_word_color: #ccc;
+$mian_word_active_color: #409EFF;
+@mixin box ($width, $height, $background) {
+  width: $width;
+  height: $height;
+  background: $background;
+}
+@mixin box_position ($position, $left, $top) {
+  position: $position;
+  left: $left;
+  top: $top;
+}
+@mixin box_position_bottom ($position, $left, $bottom) {
+  position: $position;
+  left: $left;
+  bottom: $bottom;
+}
+@mixin box_position_right ($position, $right, $top) {
+  position: $position;
+  right: $right;
+  top: $top;
+}
+@mixin box_shadow {
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
